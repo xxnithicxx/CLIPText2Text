@@ -1,0 +1,25 @@
+# Python
+*.pyc
+*.pyo
+__pycache__/
+*.ipynb_checkpoints
+
+# Virtual Environment
+venv/
+.env
+
+# Data
+data/raw/
+data/processed/
+*.csv
+
+# Outputs
+outputs/models/
+outputs/logs/
+
+# IDE Configurations
+.vscode/
+.idea/
+
+# Miscellaneous
+.DS_Store
