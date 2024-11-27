@@ -1,4 +1,4 @@
-name: MLC
+name: CLIPText2Text
 channels:
   - pytorch
   - nvidia

@@ -32,6 +32,10 @@ Install dependencies with:
 ```bash
 pip install -r requirements.txt
 ```
+or
+```bash
+conda env create -f environment.yml
+```
 
 ### Data Preparation
 
