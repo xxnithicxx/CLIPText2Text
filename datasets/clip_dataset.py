@@ -17,6 +17,9 @@ class CLIPTextDataset(Dataset):
             tokenizer (transformers.Tokenizer): Tokenizer to encode questions.
             max_length (int): Maximum length of tokenized sequences.
         """
+        dataframe.dropna(inplace=True)
+        dataframe.reset_index(drop=True, inplace=True)
+        
         self.dataframe = dataframe
         self.tokenizer = tokenizer or DistilBertTokenizer.from_pretrained(CFG.text_tokenizer)
         self.max_length = max_length or CFG.max_length

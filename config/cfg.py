@@ -6,13 +6,13 @@ class CFG:
     output_model_path = "outputs/models/best.pt"
 
     # Hyperparameters
-    batch_size = 32
+    batch_size = 128
     num_workers = 4
     learning_rate = 1e-3
     weight_decay = 1e-3
     patience = 2
     factor = 0.5
-    epochs = 10
+    epochs = 1
     max_length = 128
     projection_dim = 256
     dropout = 0.1

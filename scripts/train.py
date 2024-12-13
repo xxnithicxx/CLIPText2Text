@@ -14,6 +14,7 @@ from models.clip_model import CLIPModel, SigLIPModel
 from datasets.clip_dataset import CLIPTextDataset
 from transformers import DistilBertTokenizer
 from config.cfg import CFG
+from validate import validate
 
 def train_epoch(model, loader, optimizer, scheduler):
     model.train()
